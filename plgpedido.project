@@ -1,0 +1,74 @@
+# Plataforma de Lançamento - Gerenciador de Pedidos
+
+    + Arquitetura
+
+        - NodeJS            (v12.19.0)
+            - Express       (v0.0.0)
+        - MongoDB           (v4.4.1)
+        - AngularJS         (1.8.0)
+
+    + Banco de Dados
+
+        + Modelagem de Banco de Dados
+
+            DOC_FUNCIONARIO {
+                CODIGO
+                MATRICULA
+                SENHA
+            }
+
+            DOC_CLIENTE {
+                CODIGO
+                NOME
+                TELEFONE
+                EMAIL
+            }
+
+            DOC_PEDIDO {
+                CODIGO
+                ID_CLIENTE
+                ID_FUNCIONARIO
+                TIPO_COMIDA
+                TIPO_BEBIDA
+            }
+
+    + Comandos
+
+        -- NPM
+            npm init -y
+            npm install localtoken
+            npm i simple-mongoose-creator
+            npm i express
+            npm i body-parser
+            npm i mongoose
+            npm i cors
+            npm i bcrypt
+            npm i ejs
+            npm i jsonwebtoken
+            npm install -g nodemon
+
+            node .\application\configuration\server-configuration.js 
+
+        -- MongoDB
+
+            -- Criar base de dados
+                use PLGPEDIDO;
+
+                use admin;
+                show collections;
+                db.doc_clientes.find().pretty();
+
+    + Versionamento
+
+        git init
+        git add README.md
+        git commit -m "PLGPEDIDO"
+        git remote add origin https://github.com/repositorydysprosium/PLGPEDIDO.git
+        git push -u origin master
+
+    + Plataforma de Lançamento - Gerenciador de Projetos de Softaware (PLGPROSOF)
+
+        + Funcionalidades
+
+            + Gerenciar Funcionalidades por Módulos (Casos de Uso)
+            + Gerenciar Funcionalidades
